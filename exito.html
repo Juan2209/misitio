@@ -22,7 +22,7 @@
 				<img src="images/cheque.png" alt="IMG">
 			</div>
 
-			<form class="contact1-form validate-form" action="index.html">
+			<form class="contact1-form validate-form" action="javascript:void(0);">
 				<span class="contact1-form-title">
 					TU REGISTRO FUE EXITOSO
 				</span>
@@ -39,6 +39,14 @@
 			</form>
 		</div>
 	</div>
-
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+     const form = document.querySelector('.contact1-form');
+     form.addEventListener('submit', function(e) {
+       e.preventDefault();
+       window.location.href = 'index.html';
+     });
+   });
+</script>
 </body>
 </html>
